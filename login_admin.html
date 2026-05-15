@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin - Toko Online</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card login-card">
+            <div class="card-header text-white text-center">
+                <i class="fas fa-store fa-3x mb-2"></i>
+                <h3>Admin Login</h3>
+                <small>Toko Online Siswa</small>
+            </div>
+            <div class="card-body p-4">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold"><i class="fas fa-user me-2"></i>Username</label>
+                        <input type="text" id="email" class="form-control" placeholder="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold"><i class="fas fa-lock me-2"></i>Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 btn-login">
+                        <i class="fas fa-sign-in-alt me-2"></i>Login
+                    </button>
+                    <div class="mt-3 text-center">
+                        <a href="etalase_admin.html" class="back-link"><i class="fas fa-arrow-left me-1"></i>Kembali</a>
+                    </div>
+                    <hr>
+                    <div class="text-center small">Login: <strong>admin@gmail.com</strong> / <strong>admin123</strong></div>
+                    <div>
+                        <p id="pesan1"></p>
+                        <strong><p id="pesan2"></p></strong>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            if (loginAdmin(email, password)) {
+                window.location.href = 'dashboard.html';
+            } else {
+                // alert('Login gagal! Gunakan Username kelompok2 / 123');
+                document.getElementById("pesan1").innerText = "Email atau Password salah!";
+                document.getElementById("pesan2").innerText = "Gunakan Email admin@gmail.com Password admin123";
+                return false;
+            }
+        });
+    </script>
+</body>
+
+</html> -->
